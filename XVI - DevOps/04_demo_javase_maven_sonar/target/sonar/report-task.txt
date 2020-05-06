@@ -1,0 +1,6 @@
+projectKey=com.intiformation.sonar:04_demo_javase_maven_sonar
+serverUrl=http://localhost:9000
+serverVersion=6.7.7.38951
+dashboardUrl=http://localhost:9000/dashboard/index/com.intiformation.sonar:04_demo_javase_maven_sonar
+ceTaskId=AXHqHx3pPS73PfF8q_yv
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXHqHx3pPS73PfF8q_yv

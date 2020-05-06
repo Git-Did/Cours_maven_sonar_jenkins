@@ -1,0 +1,56 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.intiformation.sonar</groupId>
+  <artifactId>04_demo_javase_maven_sonar</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>04_demo_javase_maven_sonar</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  
+  <!-- Gestion des plugin -->
+  <build>
+  	<pluginManagement>
+  		<plugins>
+  			<!-- Plugin Jacoco pour la prise en compte de la couverture par les tests unitaires de Sonar -->
+  			<!-- Disc de Jacoco sur : https://www.eclemma.org/jacoco/trunk/doc/maven.html -->
+  			<!-- Goals
+The JaCoCo Maven plug-in defines the following goals:
+
+help
+prepare-agent
+prepare-agent-integration
+merge
+report
+report-integration
+report-aggregate
+check
+dump
+instrument
+restore-instrumented-classes
+ -->
+  			<plugin>
+  				<groupId>org.jacoco</groupId>
+  				<artifactId>jacoco-maven-plugin</artifactId>
+  				<version>0.8.4</version>
+  			</plugin>
+  		</plugins>
+  	</pluginManagement>
+  </build>
+  
+</project>
